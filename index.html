@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
+    <title> Jean's Portfolio</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+      <!-- Favicons -->
+      <link href="img/favicon.ico" rel="icon">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <!-- Navigation -->
+    <div class="row justify-content-end">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
+            <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 ms-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="bi bi-list"></i></span>
+                </button>
+                <button id="toggler" class="navbar-toggler navbar-toggler-big" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-5">
+                        <a class="nav-item nav-link active text-center mx-3" href="#home">Home</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#about">About</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#portfolio">Portfolio</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- First section -->
+    <div id="home" class="frontpage">
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    
+                   
+
+
+                    <div class="col-12">
+                        <div class="gallery">
+                            <div class="slide fade">
+                                <img src="img/slides/slide1.jpg" alt="slide1">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/slide3.jpg" alt="slide2">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/slide4-0.jpg" alt="slide2">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/slide5-0.jpg" alt="slide3">
+                            </div>
+                            
+                            
+                            <div class="slide fade">
+                                <img src="img/slides/slide2.jpg" alt="slide5">
+                            </div>   
+                            
+                            <div class="arrows d-none d-lg-block">
+                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <!-- Second secrtion -->
+        <section id="about">
+            <div id="accordion">
+                <div class="expertize container">
+
+                    <div class="cards row justify-content-between">
+                        <div class="col-3">
+                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <i class="card-icon bi bi-lightbulb"></i>
+                                <p class="subtitles">About<br>Me</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingTwo" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="card-icon bi bi-palette2"></i>
+                                <p class="subtitles">Education&<br> & Career</span></p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-diagram-3"></i>
+                                <p class="subtitles">license <br> & Awards</span></p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-chat-dots"></i>
+                                <p class="subtitles">Hobby <br> & Others</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="collapseOne" class="content row collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2><span class="highlighted">About</span>me</h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p> 생년월일 : 1973.12.15<BR>
+                                이 름 : 권진희<BR>
+                                M B T I : ENTP(INTJ)<BR>
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseTwo" class="content row collapse" aria-labelledby="headingTwo"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2><span class="highlighted">Education</span><br> & Career</h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>1992년 김해여자고등학교졸업
+                                1997년 김해인제대학교 아동학과 졸업
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseThree" class="content row collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2> <span class="highlighted">License</span><br> & Awards</h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p> 보육교사1급/방과후학교지도사
+                                사회복지사2급/요양보호사
+                                캘리그라피지도사1급
+                                색채심리상담사2급
+                                성산미술대전입상<br>삼봉서예대전입상
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="content row collapse" aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2><span class="highlighted">Hobby</span><br> & Others</h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>캘리그라피전시회-四색美인전<br>
+                                성산미술대전<br>삼봉서예대전<br>수채화전시회-허수당
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Second section -->
+        <section id="portfolio">
+            <!--  id only for scrolling -->
+            <div class="portfolio">
+                <div class="portfolio-header-area">
+                    <div class="container">
+                        <div class="portfolio-header">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4">
+                                    <h2>Portfolio</h2><br>
+                                    <h4> </h4>
+                                </div>
+                                <div id="filters" class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio active" data-filter="*">All</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c1">BI</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c2">Web Design</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c3">Banner</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c4">Card News</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-body">
+                    <div class="container">
+                        <div class="row grid">
+                            <!-- brand -->
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/bi_cup.png" alt="BI">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>BI</h3>
+                                        <p>cafe rainbow</p>
+                                        <a class="see-more-button" href="portfolio_rainbow_concept.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- webdesign -->
+                            <div class="col-sm-8 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_1.png">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>한국관광공사</h3>
+                                        <p>Web Design</p>
+                                        <a class="see-more-button" href="portfolio_web1.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_2.png">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>CJ제일제당</h3>
+                                        <p>Web Design</p>
+                                        <a class="see-more-button" href="portfolio_web2.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_3.png" alt="webdesign2">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>국제어린이마라톤</h3>
+                                        <p>Web Design</p>
+                                        <a class="see-more-button" href="portfolio_web3.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+
+
+
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_4.png" alt="web">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>스픽speak</h3>
+                                        <p>Web Design</p>
+                                        <a class="see-more-button" href="portfolio_web4.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_5.png" alt="nunebit">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>누네빛 안과</h3>
+                                        <p>web design</p>
+                                        <a class="see-more-button" href="portfolio_web5.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-8 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/web_shoppinmall.png" alt="webdesign2">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>다해보니</h3>
+                                        <p>NAVER smartstore</p>
+                                        <a class="see-more-button" href="portfolio_naversmart.html">See more</a>
+
+                                        <a href="https://smartstore.naver.com/dahaeboni" target="_blank">Web
+                                            Site</a>
+                                    </div>
+                                </figure>
+                            </div>
+
+
+                            <!-- banner -->
+                            <div class="col-sm-12 all c3">
+                                <figure class="hover-img">
+
+
+                                    <img class="img-fluid" src="img/portfolio/banner_1.png" alt="Social">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>오설록</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn">
+                                            See more</a>
+                                    </div>
+                                </figure>
+
+                            </div>
+                            <!-- 모달1 -->
+                            <div class="modal" id="modal">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">오설록 이벤트배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner _1.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달1 -->
+
+
+                            <div class="col-sm-8 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/banner_2.png" alt="IDIA">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>삼진어묵</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn2">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달2 -->
+                            <div class="modal" id="modal2">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">삼진어묵 신제품출시안내 배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner_2.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달2 -->
+
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/banner3_31bae.png" alt="w10">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>배스킨라빈스</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn3">See more</a>
+                                       
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달3 -->
+                            <div class="modal" id="modal3">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">배스킨라빈스 배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner3_POP31.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달3 -->
+
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/banner_4(idia).png" alt="w10">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>이디아커피</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn4">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달4 -->
+                            <div class="modal" id="modal4">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">이디아커피 배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner_4.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달4 -->
+
+
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/banner_5.png" alt="w10">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>3월이벤트배너</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn5">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달5 -->
+                            <div class="modal" id="modal5">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">국민카드 3월 이벤트배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner_5.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달5 -->
+
+                            <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/banner_6.png" alt="w10">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>3월 이벤트배너</h3>
+                                        <p>Banner</p>
+                                        <a class="see-more-button btn" id="add-btn6">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달6 -->
+                            <div class="modal" id="modal6">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">3월의 행사 배너</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+                                        <img src="img/popup/banner_6.jpg" style="width: 100%;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달6 -->
+
+                            <!-- cardnews -->
+
+                            <div class="col-sm-4 all c4">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/card__1.png" alt="cardnews">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>card news</h3>
+                                        <p>dsfg</p>
+                                        <a class="see-more-button btn" id="add-btn7">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달7 -->
+                            <div class="modal" id="modal7">
+                                <div class="modal_body2">
+                                    <div class="m_head">
+                                        <div class="modal_title">카드뉴스</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body2">
+                                        <img src="img/popup/cardnews_01.jpg" style="width: 400px; height: 2000px;">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달7 -->
+
+                            <div class="col-sm-4 all c4">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/card_2.png" alt="cardnews">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>card news</h3>
+                                        <p>dsfg</p>
+                                        <a class="see-more-button btn" id="add-btn8">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달8 -->
+                            <div class="modal" id="modal8">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">Add label name</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달8 -->
+
+                            <div class="col-sm-4 all c4">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/card_3.png" alt="cardnews">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>card news</h3>
+                                        <p>dsfg</p>
+                                        <a class="see-more-button btn" id="add-btn9">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- 모달9 -->
+                            <div class="modal" id="modal9">
+                                <div class="modal_body">
+                                    <div class="m_head">
+                                        <div class="modal_title">Add label name</div>
+                                        <div class="close_btn" id="close_btn">X</div>
+                                    </div>
+                                    <div class="m_body">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- 모달9 -->
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <a id="load-more" class="main-button my-5">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Third section -->
+
+        <!-- <section id="team">
+            <div class="team">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-md-6">
+                            <h2>My <span class="highlighted">story</span></h2>
+                            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint,
+                                incidunt quos dolores cumque dolorem beatae quae obcaecati repudiandae qui voluptatum
+                                magnam temporibus saepe corporis laboriosam tempora, accusamus sed est atque commodi
+                                iure nulla itaque. <br><br> Impedit, doloremque fugiat. Eaque repellat accusantium, fuga
+                                tenetur
+                                excepturi ab iure. Voluptas quasi dicta omnis.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="img/team-work.jpg" alt="Team Work">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Fourth section -->
+
+
+
+        <!-- Fifth section -->
+        <section id="contact">
+            <div class="contact">
+                <hr class="m-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="contact-form col-12 col-sm-6 col-md-7">
+                            <h2>Contact</h2>
+
+                            <div class="media row my-5">
+                                <div class="col-12 col-lg-4">
+                                    <p>Social media</p>
+                                    <p class="warning">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+
+
+                                        <a href="https://linkedin.com/" target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>Contact me via e-mail</p>
+                                    <a href="mailto:example@example.com" class="warning">jeanhee1973@gmail.com</a>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>My phone</p>
+                                    <a href="tel:+00-000-00-00" class="warning">+82-010-8937-7255</a>
+                                </div>
+                            </div>
+                            <div class="footer d-none d-md-block">
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-3">
+                                        <img src="img/catj.png" alt="penJ">
+                                    </div>
+                                    <div class="col-9">
+                                        <span>© 2023 Portfolio by kwon jeanhee</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="up" onclick="topFunction()" id="top" title="Go to top">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer d-md-none">
+                    <div class="container">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-3">
+                                <img src="img/goJ.png" alt="goJ">
+                            </div>
+                            <div class="col-9">
+                                <span>© 2023 권진희. Design by <a
+                                        href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                        title="Firmbee - Online Remote working app for collaboration & task management"
+                                        target="_blank">KWONJEANHEE</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/gallery.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/scrolls.js"></script>
+    <script src="js/validation.js"></script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+    <script>
+        $(document).on('click', '#add-btn', function (e) { console.log("click event"); $('#modal').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal').removeClass('show'); });
+
+        $(document).on('click', '#add-btn2', function (e) { console.log("click event"); $('#modal2').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal2').removeClass('show'); });
+
+        $(document).on('click', '#add-btn3', function (e) { console.log("click event"); $('#modal3').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal3').removeClass('show'); });
+
+        $(document).on('click', '#add-btn4', function (e) { console.log("click event"); $('#modal4').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal4').removeClass('show'); });
+
+        $(document).on('click', '#add-btn5', function (e) { console.log("click event"); $('#modal5').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal5').removeClass('show'); });
+
+        $(document).on('click', '#add-btn6', function (e) { console.log("click event"); $('#modal6').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal6').removeClass('show'); });
+
+        $(document).on('click', '#add-btn7', function (e) { console.log("click event"); $('#modal7').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal7').removeClass('show'); });
+
+        $(document).on('click', '#add-btn8', function (e) { console.log("click event"); $('#modal8').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal8').removeClass('show'); });
+
+        $(document).on('click', '#add-btn9', function (e) { console.log("click event"); $('#modal9').addClass('show'); });
+        $(document).on('click', '#close_btn', function (e) { console.log("click event"); $('#modal9').removeClass('show'); });
+    </script>
+
+
+
+
+</body>
+
+</html>

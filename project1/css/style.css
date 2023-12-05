@@ -1,0 +1,69 @@
+/* 공통 */
+*{padding: 0; margin: 0;}
+ul{list-style: none;}
+.inner{width: 1200px; margin: 0 auto;}
+#wrap{width: 100%;}
+/* 헤더부분 */
+#header{width: 100%;position: absolute;
+    top: 0;
+    z-index: 1;}
+.top_black>.inner{width: 1200px; height: 51px; color: #fff; line-height: 51px; margin: 0 auto; font-size: 13px;}
+.black_left{width: 600px; float: left;}
+.black_right{width: 400px; float: right;}
+.black_left>li{float: left;}
+.black_right>li{float: right;}
+.black_left:after{clear: both; display: block;content:"" ;}
+.black_right:after {clear: both ; display: block;content: "";}
+.black_left>li:before{display: inline-block; content:""; padding: 0 5px;}
+.black_left>li:nth-child(1):before{display: none;}
+.black_right>li:before{display: inline-block;content: ""; padding: 0 10px; float: left;}
+.black_right>li:nth-child(1):before{display: none;}
+.top_logomenu{width: 100%; height: 63px; line-height:63px; background:rgba(0, 0, 0, 0.5) ;}
+.logo{float: left;.black_right:106px; height: 36px;}
+.menu{float: right; color: #fff; }
+.menu>li{float: left; padding-left: 50px; font-size: 12px; text-align: center; padding-left: 134px;}
+.menu:after{clear: both ; display: block;content: "";}
+.logo>img{width: 100%; padding-top: 5px;}
+
+/* 메인이미지 */
+#mainimg{width: 100%; height: 487px;background-image: url(../images/3\(한국관광공사\)_04.png); position: relative; background-repeat: no-repeat; background-size: cover;background-position: center center;}
+.down_btn{position: absolute; width: 75px; height: 75px;  margin:  0 auto; bottom: -5%; left: 0;right: 0;}
+.box1{padding: 50px 0px 50px;}
+.list{width: calc(100%/4); float: left; text-align: center ;}
+.list>h3{ font-size: 25px; padding: 15px 0;}
+.list>p{width: 70%; margin: 0 auto;line-height: 25px; letter-spacing: -1px; font-size: 13px;}
+.inner:after{clear: both; display: block;content: "";}
+.box2{width: 100%; height: 710px; background-color: #fad4d4; margin-top: 50px;}
+.box2>.inner>h2{text-align: center; padding: 50px 0;}
+.set_left{width: 590px; height:402px; float: left; border-radius: 15px;} 
+.set_left>img{width:100%; height: 100%; border-radius: 35px;}
+.set_center{ width: 24%; float: left; color: #fff; margin-left: 1%;}
+.set_center>.wine{width: 290px; height: 193px; background-color: #530505; margin-bottom: 10px; border-radius: 20px; background-image:url(../images/box2_icon1.png); background-repeat: no-repeat; background-position: 90% 90%;}
+.wine>div{padding: 20px;}
+.wine>div>h3{padding-bottom: 20px;}
+.wine>div>p{padding-bottom: 20px;}
+
+.set_center>.red{width: 290px; height: 193px; background-color: #f43f3f; margin-bottom: 10px; border-radius: 20px; background-image:url(../images/box2_icon3.png); background-repeat: no-repeat; background-position: 90% 90%;}
+.red>div{padding: 20px;}
+.red>div>h3{padding-bottom: 20px;}
+.red>div>p{padding-bottom: 20px;}
+.set_right{float: right;}
+.set_right>.gray{width: 290px; height: 193px; background-color: #c4c4c4;  margin-bottom: 10px; border-radius:20px; background-repeat: no-repeat; background-position: 90% 90%; background-image: url(../images/box2_icon2.png);}
+.gray>div{padding: 20px;}
+.gray>div>h3{padding-bottom: 20px;}
+.gray>div>p{padding-bottom: 20px;}
+
+.set_right>.yellow{width: 290px; height: 193px; background-color: #f19a00;  margin-bottom: 10px; border-radius:20px; background-repeat: no-repeat; background-position: 90% 90%; background-image: url(../images/box2_icon4.png);}
+.yellow>div{padding: 20px;}
+.yellow>div>h3{padding-bottom: 20px;}
+.yellow>div>p{padding-bottom: 20px;}
+
+/* footer */
+
+#footer{color: #fff;}
+.footer_top{width: 100%; height: 54px; background-color: #313131; color: #fff;line-height: 54px; }
+
+.footer_top>.inner>ul:after{display: inline-block; content: ; clear: both;}
+.footer_top>.inner>ul>li{float: left; padding-right:  50px;}
+.footer_bottom{width: 100%; height: 130px; line-height: ; background-color: #2a2a2a; padding-top: 30px; color: #fff;}
+.footer_bottom>.inner>p:nth-child(1){font-size: 18px; padding-bottom: 15px; font-weight: bold;}
