@@ -109,7 +109,10 @@
     flex: 0 0 auto;
     width: 20% !important;
   }
+
+
 }
+
 
 
 
@@ -130,7 +133,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #fff;
   color: #053740;
 }
@@ -172,9 +175,9 @@ p {
 }
 
 p.subtitles {
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 0px;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 /* hr {
@@ -205,7 +208,7 @@ hr:not([size]) {
   text-decoration: none;
 
   background-color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -398,12 +401,9 @@ hr:not([size]) {
 
 .frontpage .gallery .slide img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+  width: 100%;
+
   background-size: cover;
   background-position: center;
 }
@@ -595,11 +595,11 @@ hr:not([size]) {
 .portfolio .portfolio-header-area .portfolio-header .btn-portfolio {
   width: 100%;
   height: 86px;
-  color: #053740;
+  color: #21acc1;
   text-decoration: none;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  background-color: #21acc1 border: 0px solid #ff8f68;
+  background-color: #053740; border: 0px solid #21acc1;
   -webkit-transition: border-color 0.3s ease-in;
   transition: border-color 0.3s ease-in;
   font-size: 18px;
@@ -608,7 +608,7 @@ hr:not([size]) {
 .portfolio .portfolio-header-area .portfolio-header .btn-portfolio:hover,
 .portfolio .portfolio-header-area .portfolio-header .btn-portfolio:focus,
 .portfolio .portfolio-header-area .portfolio-header .btn-portfolio.active {
-  border: 2px solid #053740;
+  border: 2px solid #21acc1;
 }
 
 .portfolio .portfolio-header-area .portfolio-header .title {
@@ -844,7 +844,7 @@ hr:not([size]) {
   }
 
   .portfolio .portfolio-header-area .portfolio-header .btn-portfolio {
-    width: 170px;
+    /* width: 170px; */
     font-size: 27px;
   }
 }
@@ -877,7 +877,6 @@ hr:not([size]) {
     position: absolute;
     top: 20%;
     font-size: 60px;
-    color: #ff688e;
   }
 
   .expertize .cards .card p {
@@ -887,7 +886,7 @@ hr:not([size]) {
   }
 
   .portfolio .portfolio-header-area .portfolio-header .btn-portfolio {
-    width: 140px;
+    /* width: 140px; */
     height: 86px;
     font-size: 20px;
   }
@@ -1019,7 +1018,7 @@ hr:not([size]) {
   }
 
   .portfolio .portfolio-header-area .portfolio-header .btn-portfolio {
-    width: 125px;
+    /* width: 125px; */
     font-size: 20px;
   }
 
@@ -1137,6 +1136,13 @@ hr:not([size]) {
   width: 70px;
   height: 70px;
 }
+
+@media (max-width: 576px) {
+  .portfolio .portfolio-body {
+    margin-top: 0px;
+  }
+
 }
+
 
 /*# sourceMappingURL=style.css.map */
